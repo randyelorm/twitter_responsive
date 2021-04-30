@@ -1,0 +1,154 @@
+*,*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --twitter_color:#00acee;
+    --hover_color:#F0F8FE;
+}
+
+body {
+
+ margin:0;
+
+}
+
+
+/* Navbar*/
+
+.notifcation_dot {
+    position: absolute;
+    width:5px;
+    height: 5px;
+    top:10px;
+    left:34px;
+    background-color:var(--twitter_color);
+    border-radius: 50%;
+}
+
+.navbar_section {
+    padding:1rem;
+    display:flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color:var(--twitter_color);
+}
+
+.fleets_section {
+    padding:1rem;
+    display:flex;
+    justify-content: space-evenly;
+    padding:1rem;
+}
+
+.fleets_section div {
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.fleets_section div > a {
+margin-left: 2px;
+
+}
+
+.first_fleet {
+    position: relative;
+}
+
+.add {
+   
+    padding-left: 10px;
+}
+
+.fa-plus {
+    position: absolute;
+    top:53%; 
+    left:35px; 
+    background-color: var(--twitter_color);
+    color:white;
+    border-radius: 50%;
+}
+
+.fleets_section  div > img {
+    max-width:50px;
+   margin-right: 0.9rem ;
+   border-radius: 50%;
+    border:3px solid var(--twitter_color)
+    
+   
+}
+
+.double_fleet {
+    display:flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ipad Media query */
+/* Side Icons appear on the side from bottom and other dropups */
+@media only screen and (min-width:500px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Full desktop screen */
+/* Side icons still dont appear in full */
+@media only screen and (min-width:990px)  {
+
+}
+
+
+
+
+
+/* Full desktop screen */
+/* Side icons still dont appear in full */
+@media only screen and (min-width:998px)  {
+
+}
+
+
+
+
+
+
+
+/* Full desktop screen */
+/* Everything appears in full */
+@media only screen and (min-width:1265px)  {
+
+}
+
