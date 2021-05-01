@@ -336,6 +336,7 @@ padding: 1rem;
 .pictures1 img {
     
     width:50%;
+    max-height: 50%;
     display:flex;
     flex-direction: row;
     margin:0.3rem;
