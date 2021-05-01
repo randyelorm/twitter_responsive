@@ -234,7 +234,7 @@ margin-left: 2px;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 4%;
     border-radius: 10px;
 
 }
@@ -327,6 +327,13 @@ padding: 1rem;
 
 .picture_post_section{
     padding: 1rem;
+}
+
+.heirs_pictures> img {
+    width: 80%;
+    height:70%;
+    border-radius: 10px;
+    margin-left: 40px;
 }
     
 .pictures1 {
