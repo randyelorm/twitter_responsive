@@ -16,25 +16,15 @@ body {
 
  margin:0;
  overflow-x: hidden;
+ padding: 1rem;
 
 }
 
-hr {
-    max-width: 100%;
-  
-}
+
 
 /* Navbar*/
 
-.notifcation_dot {
-    position: absolute;
-    width:5px;
-    height: 5px;
-    top:10px;
-    left:34px;
-    background-color:var(--twitter_color);
-    border-radius: 50%;
-}
+
 
 .navbar_section {
    
@@ -95,9 +85,9 @@ margin-left: 2px;
 }
 
 
-.sidebar {
+.sidedrop{
     display:none;
-   top:7%;
+   top:10%;
     position:fixed;
     position:absolute;
     width:300px;
@@ -112,7 +102,7 @@ margin-left: 2px;
     display:none;
 }
 
-#checkbox_side:checked ~ .sidebar {
+#checkbox_side:checked ~ .sidedrop {
     display:block;
 }
 
@@ -188,134 +178,200 @@ margin-left: 2px;
      font-size: 1.3rem;
      color:#777777;
      background-color: white;
+     z-index: 999999;
      
  }
 
- .tweet_button {
+ .navbar_section{
     
-  
-    position:absolute;
-    position:fixed;
-    bottom:70px;
-    left:80%;
-    font-size: 2rem;
-    z-index: 999;
-    background-color: var(--twitter_color);
-    padding:0.5rem;
-    border-radius: 50px;
-    color:white;
  }
 
 
+ /* video */
 
- .nav_bottom > .fa-home {
+
+ .liked {
+     margin-top: 0px;
+     color:#777777;
+     margin-left: 1rem;
+ }
+
+ .video_section {
+     padding:1rem;
+
+   
+ }
+
+ 
+ .post_info {
+
+ display:flex;
+ margin-bottom: 0.5rem;
+
+
+
+
+ }
+
+ .post_info > div {
+     display:flex;
+     position: relative;
+ }
+
+ 
+
+
+
+ .post_itself {
+    width: 100%;
+    padding-top: 56.25%;
+    height: 0px;
+    position: relative;
+ }
+
+ .video {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    border-radius: 10px;
+
+}
+
+
+ .feed_pro_img {
+     width:40px;
+     border-radius: 50px;
+    margin-right: 0.3rem;
+    max-height: 50px;
+   
+ }
+
+ .handle_nd_timestamp {
+    color:#777777;
+ } 
+
+ .hash_tag {
      color:var(--twitter_color);
  }
 
- 
-
-
-
- /* Video feed */
-
- .video_post_section {
-     position: relative;
-     margin: 0 auto;
- }
-
- .video_info {
-     padding:1rem;
-     display:flex;
-  
-     position: relative;
- }
-
- .feed_profile_pic {
-
-    max-width:40px;
-    max-height: 40px;
-    margin-right: 0.9rem ;
-    border-radius: 50%;
-
-}
-
- .video_info> i {
-    position: absolute;
-    left:93%;
-    /* left:300px; */
-    top:15px; 
-    color:#777777;
-} 
-
-.video_info > p {
-    margin: 0px;
-    font-weight: bold;
-}
-
-
-.video_info > p > span {
-    color:#777777;
-    font-weight: lighter;
-   
-}
-
-
-.caption {
-    position:absolute;
-    left:70px;
-    top:33px;
-    
-}
-
-.hash_tag {
-    color:var(--twitter_color)
-}
-
-.video {
-  width: 320px;
-  /* width:80%; */
-  position: absolute;
-  top:0;
-  margin-left: 40px;
-
-  
-}
-
 .views {
-    position: absolute; 
-    top: 315%;
-    /* top:230px; */
-    left:40px;
-    font-size: 0.8rem;
     color:#777777;
+    font-size: 0.7rem;
+    margin-left: 40px;
 }
 
-.interactions  {
-    position: absolute; 
-    top:270px;
-    left:40px;
-    font-size: 0.8rem;
-    color:#777777;
+.interactions {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-left: 1rem;
+    
+}
+
+.interactions > a {
+   color:#303030;
+   text-decoration: none;
+    
+}
+
+.interactions > a:hover {
+    color:var(--twitter_color)
+    
+     
+ }
+
+.fa-feather-alt {
+    
+   
  
+   
+     position:fixed;
+     
+      bottom:70px;
+     left:75%;
+     font-size: 1rem;
+     background-color: var(--twitter_color);
+     color:white;
+     border-radius: 50px;
+     padding:1rem;
+     z-index: 9999;
+    
+    
 }
 
 
-.interactions > a:nth-of-type(1) {
-    color:#777777;
-  
+/* verified */
+.fa-check-circle {
+    background-color:var(--twitter_color);
+    border-radius: 50px;
+    font-size: 1rem;
+    color:white;
+    }
+
+
+
+/* Text_post */
+
+.text_post_section{
+padding: 1rem;
+}
+
 
     
 
+
+ 
+
+/* picture_post */
+
+.picture_post_section{
+    padding: 1rem;
+}
+    
+.pictures1 {
+    display:flex;
 }
 
-.interactions > a  {
-    color:#777777;
+.pictures1 img {
+    
+    width:50%;
     display:flex;
-    margin-right: 65px;
-    text-decoration: none;
+    flex-direction: row;
+    margin:0.3rem;
+  
 }
+
+
+.pictures2 {
+    display:flex;
+}
+
+.pictures2 img {
+
+
+    margin:0.3rem;
+    width:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+ .side_nav_500  {
+     display:none;
+ }
+ 
+  
+
+
+
 
 
 
@@ -335,7 +391,79 @@ margin-left: 2px;
 /* Side Icons appear on the side from bottom and other dropups */
 @media only screen and (min-width:500px) {
 
+
+        .side_nav_500  {
+            display:block;
+        }
+
+        .nav_bottom {
+            display:none;
+        }
+
+        .side_bar-toggle {
+            display:none;
+        }
+
+        .nav_bar_logo {
+            display:none !important;
+        }
+
+        .nav_bar_star {
+            display:none !important;
+        }
+
+        .fleets_section {
+            display:none;
+        }
+
+    
+        .video_section {
+            margin-left: 70px;
+        }
+        
+
+
+        .side_nav_500{
+           
+            top:1%;
+            position:fixed;
+            position:absolute;
+           
+            background-color: white;
+            z-index: 9999;
+            padding:1rem;
+            color:black;
+            border-right: 1px solid black;
+            
+        }
+
+
+
+        /* .post_itself {
+            max-width: 400px;
+            padding-top: 20%;
+            height:0px;
+            position: relative;
+         }
+        
+         .video {
+            max-width: 400px;
+            max-height: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        
+        } */
+
+        
+      
+
+
+
+
+
 }
+
 
 
 
@@ -349,6 +477,7 @@ margin-left: 2px;
 /* Full desktop screen */
 /* Side icons still dont appear in full */
 @media only screen and (min-width:990px)  {
+
 
 }
 
