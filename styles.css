@@ -281,7 +281,7 @@ margin-left: 2px;
      
  }
 
-.fa-feather-alt {
+.tweet_feather {
     
    
  
@@ -409,10 +409,37 @@ padding: 1rem;
  }
  
   
+.left_section {
+    display:none;
+}
 
+.right_section {
+    display: none;
+}
 
+.whats_happening_box {
+    display:none;
+}
 
+.whatsap_breaker {
+    display:none;
+}
 
+.nav_500 {
+  display:none;
+}
+
+.whats_happening {
+    display: none;
+}
+
+.top_nav_500 {
+    display:none;
+}
+
+.whatsap_br_breaker{
+    display:none;
+}
 
 
 
@@ -432,8 +459,128 @@ padding: 1rem;
 @media only screen and (min-width:500px) {
 
 
-        .side_nav_500  {
+    body {
+        display:flex;
+        
+    }
+
+    body > * {
+        width:100%;
+    }
+
+
+            /* left section */
+
+              
+        .left_section {
+            font-size: 2rem;
             display:block;
+            display:flex;
+            flex-direction: column;
+          
+            position: fixed;
+            top:0;
+            left:0;
+            max-width:100px;
+            border-right: 1px solid #777777;
+            padding-left:2rem;
+            
+            
+
+           
+        }
+
+
+
+        .left_section i {
+            margin-bottom: 1.5rem;
+            color:#303030;
+            
+        }
+
+        .left_section > i:nth-of-type(1) {
+            color:var(--twitter_color);
+        }
+        .left_section > i:nth-of-type(2) {
+            color:var(--twitter_color);
+        }
+
+        .tweet_feather_side {
+             
+            width: 70%;
+            background-color: var(--twitter_color);
+            color:white !important;
+            padding:0.6rem;
+            border-radius:50px;
+           
+            
+           
+          
+            
+        }
+
+        .side_pro {
+            width:50px;
+            margin-top: 5rem;
+            border-radius: 50px;
+        }
+
+
+
+
+            /* middle section */
+        .top_nav_500 {
+            display:block;
+            position:fixed;
+            background-color: white;
+            z-index: 999999999999;
+            top:0;
+            padding:1rem;
+            width: 400px;
+            
+            margin-right:auto;
+            border-right:1px solid #777777;
+            display:flex;
+            justify-content: space-between;
+            
+        }
+
+        .whats_happening {
+            position:absolute;
+            
+        }
+
+        .whatsap_input {
+            position: absolute;
+            width: 800%;
+           padding:0px;
+           top:5px;
+           border: none;
+           
+           
+        }
+
+        .whatsap_input:focus {
+            outline: none;
+           border: none;
+           
+           
+        }
+
+
+
+        .whats_happening_pro {
+            max-width: 40px;
+            border-radius:50px;
+        }
+
+        .top_nav_500 > div {
+            font-weight: bold;
+
+        }
+
+        .top_nav_500 > i {
+            color:var(--twitter_color);
         }
 
         .nav_bottom {
@@ -456,44 +603,93 @@ padding: 1rem;
             display:none;
         }
 
-    
-        .video_section {
-            margin-left: 70px;
+        .whatsap_br_breaker{
+            display:block !important;
+            margin-bottom: 2rem;
         }
-        
 
+       
 
-        .side_nav_500{
-           
-            top:1%;
-            position:fixed;
-            position:absolute;
-           
-            background-color: white;
-            z-index: 9999;
-            padding:1rem;
-            color:black;
-            border-right: 1px solid black;
+        .middle_section {
+          margin-left: 97.6px;
+          border-right:1px solid #777777;
+          width: 400px;
             
         }
+        
+        
 
+        .right_section {
+            display: none;
+        
 
+        }
 
-        /* .post_itself {
-            max-width: 400px;
-            padding-top: 20%;
-            height:0px;
+        /* whats happening */
+
+        .whats_happening_box {
             position: relative;
-         }
-        
-         .video {
-            max-width: 400px;
-            max-height: 400px;
+            display: block;
+        }
+
+        .whats_happening {
+            display:block;
+        }
+
+        .whatsap_hr_breaker{
+            display:block;
+           
+        }
+
+        hr {
+            max-width:600px;
+        }
+
+        .icons_nd_tweet-btn_box {
+            
             position: absolute;
-            top: 0;
-            left: 0;
+            width: 80%;
+            display:flex;
+            justify-content: space-between;
+            align-items: baseline;
+            top:35px;
+            left:50px;
+        }
+
+        .icons_nd_tweet-btn_box > div a {
+            color:var(--twitter_color)
+        }
+
+        .icons_nd_tweet-btn_box > div button {
+            background-color: var(--twitter_color);
+            color:white;
+            border:none;
+            padding:0.5rem;
+            border-radius: 50% / 100%;
+            
+           
+        }
         
-        } */
+
+        .tweet_feather {
+            display:none !important;
+        }
+
+       
+
+
+
+
+
+
+        
+
+
+    
+
+
+
+     
 
         
       
