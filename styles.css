@@ -330,10 +330,10 @@ padding: 1rem;
 }
 
 .heirs_pictures> img {
-    width: 80%;
+    width: 100%;
     height:70%;
     border-radius: 10px;
-    margin-left: 40px;
+    margin-left: px;
 }
     
 .pictures1 {
@@ -366,6 +366,35 @@ padding: 1rem;
 }
 
 
+.pictures_kellys {
+    display:flex;
+}
+
+
+.pictures_kellys img {
+    
+    width:50%;
+    height:50%;
+    margin: 0.3rem;
+    border-radius: 10px;
+   
+    
+  
+}
+
+.elorms_heart {
+    color:#960018;
+}
+
+.pictures_ella  img{
+    width: 100%;
+    margin: 0.3rem;
+    border-radius: 10px;
+}
+
+.feed_name {
+    font-weight: bold;
+}
 
 
 
