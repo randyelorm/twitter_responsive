@@ -437,7 +437,15 @@ padding: 1rem;
     display:none;
 }
 
+.whatsap_hr_breaker{
+    display:none;
+}
+
 .whatsap_br_breaker{
+    display:none;
+}
+
+.top_home_nd_star_box {
     display:none;
 }
 
@@ -477,40 +485,53 @@ padding: 1rem;
             display:block;
             display:flex;
             flex-direction: column;
-          
+            justify-content: space-between;
             position: fixed;
             top:0;
             left:0;
-            max-width:100px;
+            max-width:200px;
             border-right: 1px solid #777777;
             padding-left:2rem;
+            height:100%;
+            padding-top: 1rem;
             
             
 
            
         }
 
-
-
-        .left_section i {
+        .left_section> div  {
+            display:flex;
+            flex-direction: column;
             margin-bottom: 1.5rem;
             color:#303030;
+            align-items: flex-end;
+            padding-right: 1rem;
+           
             
         }
 
-        .left_section > i:nth-of-type(1) {
+
+        .left_section> div i {
+            margin-bottom: 1.5rem;
+            color:#303030;
+           
+            
+        }
+
+        .left_section > div i:nth-of-type(1) {
             color:var(--twitter_color);
         }
-        .left_section > i:nth-of-type(2) {
+        .left_section > div i:nth-of-type(2) {
             color:var(--twitter_color);
         }
 
         .tweet_feather_side {
              
-            width: 70%;
+            
             background-color: var(--twitter_color);
             color:white !important;
-            padding:0.6rem;
+            padding:0.4rem;
             border-radius:50px;
            
             
@@ -529,22 +550,62 @@ padding: 1rem;
 
 
             /* middle section */
-        .top_nav_500 {
-            display:block;
-            position:fixed;
-            background-color: white;
-            z-index: 999999999999;
-            top:0;
-            padding:1rem;
-            width: 400px;
-            
-            margin-right:auto;
-            border-right:1px solid #777777;
+
+        .middle_section {
+                margin-left: 185.6px;
+                border-right:1px solid #777777;
+                max-width: 600px;
+                min-width: 400px;
+                
+                  
+        }
+
+        .top_home_nd_star_box {
             display:flex;
             justify-content: space-between;
+            align-items: flex-start;
+            padding-right: 7%;
+            padding-left:1rem;
+           
+
+        }
+
+        .top_home_nd_star_box > div {
+          font-weight: bold;
+          font-size: 1.5rem;
+           
+
+        }
+      
+
+       
+      
+        .top_home_nd_star_box  > .fa-star{
+            color:var(--twitter_color);
+            font-size: 1.5rem;
+        }
+
+        .heirs_pictures> img {
+            width: 100%;
+           
+            border-radius: 10px;
             
         }
 
+        .top_nav_500 > div {
+           
+            
+        }
+
+        .top_nav_500 > i {
+            width:0;
+            margin-right: 20px;
+            flex-shrink: 100;
+            
+        }
+
+        
+       
         .whats_happening {
             position:absolute;
             
@@ -599,6 +660,10 @@ padding: 1rem;
             display:none !important;
         }
 
+        .twiiter_bird {
+            display:none !important;
+        }
+
         .fleets_section {
             display:none;
         }
@@ -608,22 +673,19 @@ padding: 1rem;
             margin-bottom: 2rem;
         }
 
+        .navbar_section {
+            display:none;
+        }
+
+        
+
        
-
-        .middle_section {
-          margin-left: 97.6px;
-          border-right:1px solid #777777;
-          width: 400px;
-            
-        }
+       
+       
         
         
 
-        .right_section {
-            display: none;
-        
-
-        }
+       
 
         /* whats happening */
 
@@ -653,7 +715,7 @@ padding: 1rem;
             justify-content: space-between;
             align-items: baseline;
             top:35px;
-            left:50px;
+            left:80px;
         }
 
         .icons_nd_tweet-btn_box > div a {
@@ -674,6 +736,8 @@ padding: 1rem;
         .tweet_feather {
             display:none !important;
         }
+
+
 
        
 
@@ -710,10 +774,188 @@ padding: 1rem;
 
 
 
-/* Full desktop screen */
+
 /* Side icons still dont appear in full */
+/* trends page appears */
 @media only screen and (min-width:990px)  {
 
+    .right_section {
+        position:sticky;
+        top:0;
+        left:800px;
+        height:100%;
+        font-size: 0.8rem !important;
+    }
+
+
+    .right_section {
+        display:flex;
+        flex-direction: column;
+        padding-left: 1rem;
+       
+        
+    }
+
+    /* searchbar */
+
+    .serch_bar_box {
+        margin-left: 1rem;
+        position:relative;
+        
+    }
+
+    .search_input {
+        padding:1rem;
+        width:400px;
+        border-radius: 40px;
+        
+        background-color: #f2f2f2;
+        font-size: 1.3rem;
+        padding-left:3rem;
+        border:none;
+       
+    }
+
+    .search_input:focus {
+        outline:none;
+    }
+
+
+    /* trends */
+
+
+    .trends_box {
+
+        margin-left: 1.5rem;
+        background-color: #f2f2f2;
+        max-width:380px;
+        border-radius: 20px;
+
+    }
+
+    .trend_search_icon {
+        position:absolute;
+        left:2%;
+        top:34%;
+        font-size: 1.3rem;
+        color:grey;
+        
+        
+    }
+
+
+    
+
+    .trends_heading {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem;
+    }
+
+    .trends_heading h1 {
+        font-size: 2rem;
+    }
+
+    .trends_heading i {
+        font-size: 1.3rem;
+        color:var(--twitter_color)
+    }
+
+    
+    .trending {
+        display:flex;
+        justify-content: space-between;
+        padding:1rem;
+        
+    }
+
+    .trending a {
+        text-decoration: none;
+        color:black;
+    }
+
+    .trending a > p {
+        color:#777777;
+    }
+
+    .show_more {
+        padding:1rem;
+    }
+
+    .show_more > a {
+        text-decoration: none;
+        color:var(--twitter_color);
+        font-size: 1rem;
+    }
+
+
+    /* Who to follow */
+
+    .who_to_follow {
+
+        margin-left: 1.5rem;
+        background-color: #f2f2f2;
+        max-width:380px;
+        border-radius: 20px;
+
+    }
+
+    .follow_suggestions{
+        display:flex;
+        justify-content: space-evenly;
+        align-content: center;
+        padding:1rem;
+        padding:0px;
+        
+    }
+
+    .follow_suggestions > a {
+        text-decoration: none;
+        color:black;
+        flex-grow: 1;
+    }
+
+    .follow_suggestions  p {
+        color:#777777;
+    }
+
+    .follow_suggestions > img {
+        width:15%;
+        height:15%;
+        border-radius: 50px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+       
+       
+    }
+
+    .follow_suggestions button {
+        color:var(--twitter_color);
+        padding:0px;
+        height:0px;
+        margin-top: 20px;
+        border:2px solid var(--twitter_color);
+        height:40px;
+        padding:0.2rem;
+        border-radius: 40px;
+        
+        flex-grow: 1;
+        margin:2rem;
+    }
+
+    /* footer_links */
+    .footer_links_section {
+        margin-left: 2rem;
+        margin-top: 1rem;
+
+    }
+
+    .footer_links_section a, p {
+        text-decoration: none;
+        color:#777777;
+    }
+
 
 }
 
@@ -721,11 +963,7 @@ padding: 1rem;
 
 
 
-/* Full desktop screen */
-/* Side icons still dont appear in full */
-@media only screen and (min-width:998px)  {
 
-}
 
 
 
@@ -735,7 +973,7 @@ padding: 1rem;
 
 /* Full desktop screen */
 /* Everything appears in full */
-@media only screen and (min-width:1265px)  {
+@media only screen and (min-width:1266px)  {
 
 }
 
