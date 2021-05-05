@@ -7,6 +7,8 @@
     <title>Twitter UI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -28,8 +30,63 @@
             </div>
               
               <div><img src="images/proimage.jpeg" class="side_pro" alt=""></div> 
+              
 
         </section>
+
+            <!-- left section_largest size -->
+
+        <section class ="left_section_large">
+
+            <div>
+                <i class="fab fa-twitter"></i> 
+                <div class ="text_nd_icon"> <i class="fas fa-home"></i> <span>HOME</span> </div> 
+                <div class ="text_nd_icon"> <i class="fas fa-search"></i> <span>Explore</span>  </div>
+                <div class ="text_nd_icon"><i class="far fa-bell"></i> <span>Notifications</span> </div> 
+                <div class ="text_nd_icon">  <i class="far fa-envelope "></i><span>Messages</span> </div>
+                <div class ="text_nd_icon"> <i class="far fa-bookmark "></i> <span>Bookmarks</span> </div>
+                <div class ="text_nd_icon"><i class="fas fa-list "></i> <span>Lists</span> </div> 
+                <div class ="text_nd_icon"><i class="far fa-user "></i> <span>Profile</span> </div> 
+                <div class ="text_nd_icon"> <label for=""> <i class="fas fa-ellipsis-h "></i> </label> <span> More </span> </div> 
+                <button>Tweet</button>
+
+            </div>
+              
+            <div class ="left_profile">
+            
+                <div>
+                    <img src="images/proimage.jpeg" class="side_pro" alt=""> 
+                    <p>Randy Davoh <span>@randyelorm_</span></p>
+                </div> 
+
+                <label for="left_section_pro_dropup_checkbox"><i class ="fas fa-ellipsis-h"></i></label>
+            
+            </div> 
+         
+
+                <input type="checkbox" id = "left_section_pro_dropup_checkbox">
+
+                <div class ="left_section_pro_dropup">
+                  <ul>
+                        <li>
+                           
+                                <img src="images/proimage.jpeg" class="side_pro_drop_up_img" alt="">
+                                <span>Randy Davoh <br> @randyelorm_</span>
+                           
+                                <i class ="fas fa-check"></i>
+                            
+                        </li>
+                        <hr>
+                        <li>Add and existing account</li>
+                        <hr>
+                        <li>Log out @randyelorm_</li>
+
+                  </ul>
+                </div>
+        
+        </section>
+
+        
 
 
 
@@ -255,7 +312,7 @@
 
         <div class="views">
 
-            22.3M views
+            13.9M views
 
         </div>
 
@@ -1037,7 +1094,7 @@
                <i class ="fas fa-cog"></i>
             </div>
 
-            <hr>
+            <hr class ="trends_hr_breaker">
             <div class ="trending">
 
                 <a href="">
@@ -1049,12 +1106,28 @@
 
                 </a>
 
-                <i class ="fas fa-ellipsis-h"></i>
+               <label for="trends_checkbox1"><i class ="fas fa-ellipsis-h"></i></label> 
+                <input type="checkbox" id = "trends_checkbox1">
+                <div class ="trends_dropdown1">
+                    <ul>
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>Not interested in this</span>
+                        </li>
+                        <br>
+                       
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>This trend is harmful or spammy</span>
+
+                        </li>
+                    </ul>
+                </div>
 
 
             </div>
 
-            <hr>
+            <hr class ="trends_hr_breaker">
 
             <div class ="trending">
 
@@ -1067,14 +1140,34 @@
 
                 </a>
 
-                <i class ="fas fa-ellipsis-h"></i>
+                
+                <label for="trends_checkbox2"><i class ="fas fa-ellipsis-h"></i></label> 
+                <input type="checkbox" id = "trends_checkbox2">
+                <div class ="trends_dropdown2">
+                    <ul>
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>Not interested in this</span>
+                        </li>
+                        <br>
+                       
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>This trend is harmful or spammy</span>
+
+                        </li>
+                    </ul>
+                </div>
+               
 
 
             </div>
 
-            <hr>
+            <hr class ="trends_hr_breaker">
 
             <div class ="trending">
+
+
 
                 <a href="">
 
@@ -1086,18 +1179,35 @@
 
                 </a>
 
-                <i class ="fas fa-ellipsis-h"></i>
+                <label for="trends_checkbox3"><i class ="fas fa-ellipsis-h"></i></label> 
+                <input type="checkbox" id = "trends_checkbox3">
+                <div class ="trends_dropdown3">
+                    <ul>
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>Not interested in this</span>
+                        </li>
+                        <br>
+                       
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>This trend is harmful or spammy</span>
+
+                        </li>
+                    </ul>
+                </div>
+
 
 
             </div>
 
-            <hr>
+            <hr class ="trends_hr_breaker">
 
             <div class ="trending">
 
                 <a href="">
 
-                    <p>Politics • Treding </p>
+                    <p>Politics • Trending </p>
                     <h1>#FixTheCountry</h1>
                     <p>294K Tweets</p>
                     
@@ -1105,12 +1215,28 @@
 
                 </a>
 
-                <i class ="fas fa-ellipsis-h"></i>
+                <label for="trends_checkbox4"><i class ="fas fa-ellipsis-h"></i></label> 
+                <input type="checkbox" id = "trends_checkbox4">
+                <div class ="trends_dropdown4">
+                    <ul>
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>Not interested in this</span>
+                        </li>
+                        <br>
+                       
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>This trend is harmful or spammy</span>
+
+                        </li>
+                    </ul>
+                </div>
 
 
             </div>
 
-            <hr>
+            <hr class ="trends_hr_breaker">
 
             <div class ="trending">
 
@@ -1124,12 +1250,28 @@
 
                 </a>
 
-                <i class ="fas fa-ellipsis-h"></i>
+                <label for="trends_checkbox5"><i class ="fas fa-ellipsis-h"></i></label> 
+                <input type="checkbox" id = "trends_checkbox5">
+                <div class ="trends_dropdown5">
+                    <ul>
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>Not interested in this</span>
+                        </li>
+                        <br>
+                       
+                        <li>
+                            <i class="far fa-frown"></i>
+                            <span>This trend is harmful or spammy</span>
+
+                        </li>
+                    </ul>
+                </div>
 
 
             </div>
 
-            <hr>
+            <hr class ="trends_hr_breaker">
 
             <div class ="show_more">
                 <a href="" class="">Show More</a>

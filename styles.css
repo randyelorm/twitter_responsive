@@ -5,6 +5,7 @@
 
 html {
     box-sizing: border-box;
+    font-family: 'Itim', cursive;
 }
 
 :root {
@@ -390,6 +391,7 @@ padding: 1rem;
     width: 100%;
     margin: 0.3rem;
     border-radius: 10px;
+    
 }
 
 .feed_name {
@@ -446,6 +448,10 @@ padding: 1rem;
 }
 
 .top_home_nd_star_box {
+    display:none;
+}
+
+.left_section_large {
     display:none;
 }
 
@@ -508,6 +514,7 @@ padding: 1rem;
             align-items: flex-end;
             padding-right: 1rem;
            
+           
             
         }
 
@@ -545,6 +552,11 @@ padding: 1rem;
             margin-top: 5rem;
             border-radius: 50px;
         }
+
+      
+
+
+
 
 
 
@@ -617,6 +629,7 @@ padding: 1rem;
            padding:0px;
            top:5px;
            border: none;
+           margin-left:0.8rem;
            
            
         }
@@ -677,13 +690,23 @@ padding: 1rem;
             display:none;
         }
 
-        
 
-       
-       
-       
-        
-        
+
+        .interactions > a {
+            
+            font-size: 1rem;
+            
+        }
+
+        .interactions > a:hover {
+            
+            
+            color:var(--twitter_color);
+        }
+
+        .views {
+            font-size: 1rem;
+        }
 
        
 
@@ -737,35 +760,11 @@ padding: 1rem;
             display:none !important;
         }
 
-
-
-       
-
-
-
-
-
-
-        
-
-
-    
-
-
-
-     
-
-        
-      
-
-
-
-
+        .left_section_large {
+            display:none;
+        }
 
 }
-
-
-
 
 
 
@@ -785,16 +784,14 @@ padding: 1rem;
         left:800px;
         height:100%;
         font-size: 0.8rem !important;
-    }
-
-
-    .right_section {
         display:flex;
         flex-direction: column;
         padding-left: 1rem;
        
-        
     }
+
+
+   
 
     /* searchbar */
 
@@ -823,6 +820,13 @@ padding: 1rem;
 
     /* trends */
 
+    
+
+    .trends_hr_breaker {
+        margin:0px;
+    }
+
+   
 
     .trends_box {
 
@@ -849,7 +853,7 @@ padding: 1rem;
     .trends_heading {
         display:flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         padding:1rem;
     }
 
@@ -866,13 +870,17 @@ padding: 1rem;
     .trending {
         display:flex;
         justify-content: space-between;
-        padding:1rem;
+        padding:0px 1rem 0px 1rem;
+        position:relative;
+        align-items: baseline;
+        position: relative;
         
     }
 
     .trending a {
         text-decoration: none;
         color:black;
+        font-size: 1.1rem;
     }
 
     .trending a > p {
@@ -888,6 +896,7 @@ padding: 1rem;
         color:var(--twitter_color);
         font-size: 1rem;
     }
+
 
 
     /* Who to follow */
@@ -944,6 +953,11 @@ padding: 1rem;
         margin:2rem;
     }
 
+    .follow_suggestions button:hover {
+        background-color:var(--twitter_color);
+        color:white;
+    }
+
     /* footer_links */
     .footer_links_section {
         margin-left: 2rem;
@@ -954,6 +968,146 @@ padding: 1rem;
     .footer_links_section a, p {
         text-decoration: none;
         color:#777777;
+    }
+
+    .footer_links_section a:hover {
+        text-decoration: underline;
+        
+    }
+    
+    .left_section_large {
+        display:none;
+    }
+
+    /* dropdowns */
+
+    .trends_dropdown1 {
+        display:none;
+        background-color: white;
+        position: absolute;
+        left:28%;
+        padding:0.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 0 1em rgba(0,0,0, 0.2);
+    }
+    .trends_dropdown1> ul {
+        list-style: none;
+        padding:0px;
+    }
+
+    #trends_checkbox1 {
+        display:none;
+    }
+
+    #trends_checkbox1:checked ~ .trends_dropdown1 {
+        display:block;
+
+
+    }
+
+
+
+    .trends_dropdown2 {
+        display:none;
+        background-color: white;
+        position: absolute;
+        left:28%;
+        padding:0.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 0 1em rgba(0,0,0, 0.2);
+    }
+    .trends_dropdown2> ul {
+        list-style: none;
+        padding:0px;
+    }
+
+    #trends_checkbox2 {
+        display:none;
+    }
+
+    #trends_checkbox2:checked ~ .trends_dropdown2 {
+        display:block;
+
+
+    }
+
+
+
+
+    .trends_dropdown3 {
+        display:none;
+        background-color: white;
+        position: absolute;
+        left:28%;
+        padding:0.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 0 1em rgba(0,0,0, 0.2);
+    }
+    .trends_dropdown3> ul {
+        list-style: none;
+        padding:0px;
+    }
+
+    #trends_checkbox3 {
+        display:none;
+    }
+
+    #trends_checkbox3:checked ~ .trends_dropdown3 {
+        display:block;
+
+
+    }
+
+
+
+    .trends_dropdown4 {
+        display:none;
+        background-color: white;
+        position: absolute;
+        left:28%;
+        padding:0.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 0 1em rgba(0,0,0, 0.2);
+    }
+    .trends_dropdown4> ul {
+        list-style: none;
+        padding:0px;
+    }
+
+    #trends_checkbox4 {
+        display:none;
+    }
+
+    #trends_checkbox4:checked ~ .trends_dropdown4 {
+        display:block;
+
+
+    }
+
+
+
+    .trends_dropdown5 {
+        display:none;
+        background-color: white;
+        position: absolute;
+        left:28%;
+        padding:0.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 0 1em rgba(0,0,0, 0.2);
+    }
+    .trends_dropdown5> ul {
+        list-style: none;
+        padding:0px;
+    }
+
+    #trends_checkbox5 {
+        display:none;
+    }
+
+    #trends_checkbox5:checked ~ .trends_dropdown5 {
+        display:block;
+
+
     }
 
 
@@ -974,6 +1128,249 @@ padding: 1rem;
 /* Full desktop screen */
 /* Everything appears in full */
 @media only screen and (min-width:1266px)  {
+
+   
+
+    .left_section {
+        display:none;
+    }
+
+
+
+    .left_section_large{
+        font-size: 1.4rem;
+        display:block;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top:0;
+        left:0;
+        /* max-width:200px; */
+        max-width:270px;
+        border-right: 1px solid #777777;
+        padding-left:2rem;
+        height:100%;
+        padding-top: 1rem;
+       
+           
+
+    }
+
+
+    .more_dropup {
+        display:none;
+        position: absolute;
+        background-color: white;
+        top:10%;
+        
+    }
+
+
+    #more_checkbox:checked ~ .more_dropup {
+        display:block;
+    }
+
+
+    
+    .middle_section {
+            margin-left: 255px;
+            border-right:1px solid #777777;
+            max-width: 600px;
+            min-width: 400px;
+            
+              
+    }
+
+
+
+    .left_section_large > div  {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 1.3rem;
+        color:#303030;
+        align-items: flex-start;
+        padding-right: 1rem;
+       
+        
+    }
+
+    .text_nd_icon {
+        margin-bottom:1rem;
+    }
+
+    
+
+    .text_nd_icon > i {
+        color:black;
+    }
+
+  
+
+
+    .left_section_large> div i {
+        margin-bottom: 1.5rem;
+        color:#303030;
+        
+       
+        
+    }
+
+    .left_section_large > div span {
+        
+        padding-left: 1rem;
+    }
+
+    .left_section_large > div button {
+        
+       width:90%;
+       padding:0.8rem;
+       font-size: 1.3rem;
+       border-radius: 40px;
+       background-color: var(--twitter_color);
+       color:white;
+       border:none;
+
+    }
+
+    .left_section_large > div button:hover {
+        
+      background-color:rgb(5, 90, 129);
+ 
+     }
+ 
+
+    .left_profile {
+        display:flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: baseline !important;
+        position: relative;
+    }
+
+    .left_profile > div {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .left_profile > div > p{
+      margin: 0px;
+      font-size: 1rem;
+    }
+
+
+
+    .left_profile > div >img {
+       margin-top: 0px;
+       margin-right: 1rem;
+        
+    }
+
+    .left_profile > div > p > span{
+        padding:0px
+      }
+
+
+
+
+    .left_section_large > div i:nth-of-type(1) {
+        color:var(--twitter_color);
+    }
+
+    .lleft_section_large > div i:nth-of-type(2) {
+        color:var(--twitter_color);
+    }
+
+    .tweet_feather_side_large {
+         
+        
+        background-color: var(--twitter_color);
+        color:white !important;
+        padding:0.4rem;
+        border-radius:50px;
+       
+        
+       
+      
+        
+    }
+
+
+    .side_pro {
+        width:50px;
+        margin-top: 5rem;
+        border-radius: 50px;
+    }
+
+    
+    
+    #left_section_pro_dropup_checkbox {
+        display:none;
+    }
+
+    #left_section_pro_dropup_checkbox:checked ~ .left_section_pro_dropup {
+        display:block !important;
+    }
+
+    .left_section_pro_dropup {
+        display:none !important;
+        position: absolute;
+        background-color: white;
+        top:71%;
+       
+        box-shadow: 0 0 1em rgba(0,0,0, 0.2);
+        padding:0px !important;
+        width: 80%;
+        padding:1rem;
+
+       
+    }
+
+    .left_section_pro_dropup ul  {
+        list-style: none;
+        font-size: 1rem;
+        padding:0px !important;
+        padding:1rem;
+       
+    }
+
+    .side_pro_drop_up_img {
+        width:40px;
+        border-radius: 50px;
+
+    }
+
+    .left_section_pro_dropup ul > li:nth-of-type(1)  {
+        display:flex;
+        justify-content: space-evenly;
+
+    }
+
+    .left_section_pro_dropup ul > li:nth-of-type(2)  {
+        padding:0.5rem;
+
+    }
+
+    .left_section_pro_dropup ul > li:nth-of-type(3)  {
+        padding:0.5rem;
+ 
+     }
+
+  
+
+   
+
+
+
+
+
+
+
+
+
+
 
 }
 
